@@ -77,3 +77,14 @@ docker run -d -p localhost-port:container-port
 ```bash
 docker cp <file to copy> <container_id>:path/to/file
 ```
+
+## Pushing to docker repository
+- login with `docker login`
+- To commit the image to the docker repo
+```bash
+docker commit <container_id> <user/docker repo name>
+```
+- To push to the repository
+```bash
+docker push <user/docker repo name>
+```
